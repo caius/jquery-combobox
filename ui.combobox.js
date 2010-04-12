@@ -87,6 +87,7 @@ function createCombo(element, bAutoShow, bArrowVisible, width) {
 		*/
 		init: function() {
 			var that = this;
+			this.options = $.extend({}, $.ui.combobox.defaults, this.options);
 			var options = this.options;
 			var inputElem = $('<input type = "text" syze= "' + options.width + '"/>');
 
