@@ -23,7 +23,7 @@ img.ui-combobox-arrow-clicked {
 
 .ui-combobox-list,
 .ui-combobox-item,
-ui-combobox-item-unselectable
+.ui-combobox-item-unselectable
 {
 	display: block;
 	font-family: Arial, Helvetica, sans-serif;
