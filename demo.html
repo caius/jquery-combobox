@@ -3,8 +3,8 @@
 <html lang="en">
 <head>
 	<title>ComboBox demos</title>
-	<script src = "jquery-1.2.6.js"></script>
-	<script src = "ui.core.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script> 
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script> 
 	<script src = "ui.combobox.js"></script>
 	<link rel = "stylesheet" type = "text/css" href = "ui.combobox.css" />
 </head>
@@ -48,6 +48,25 @@
 		$('#demo2').combobox();
 	</script>
 
+	<h2>Simple combobox from select with numbers</h2>
+	<p>
+	The combobox picks up the "value" attribute from each option, and uses that
+	as the value of the selection.  This lets you use different values for the
+	display vs. the actual value.
+	</p>
+	<select id = "demo2num">
+		<option value = "1">Oranges</option>
+		<option value = "2">Apples</option>
+		<option value = "3">Pears</option>
+		<option value = "4">Kiwis</option>
+		<option value = "5">Bananas</option>
+		<option value = "6">Grapes</option>
+	</select>
+	<script>
+		$('#demo2num').combobox();
+	</script>
+	
+	
 	<h2>Event Handling</h2>
 	<div id = "demo3Text">Text shows up here</div>
 	<div id = "demo3Menu">Menu selection shows up here</div>
@@ -110,5 +129,6 @@
 		});
 	</script>
 
+	
 </body>
 </html>
