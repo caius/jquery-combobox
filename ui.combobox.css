@@ -21,7 +21,7 @@ img.ui-combobox-arrow-clicked {
 	z-index: 18001;
 }
 
-..ui-combobox-list,
+.ui-combobox-list,
 .ui-combobox-item,
 ui-combobox-item-unselectable
 {
