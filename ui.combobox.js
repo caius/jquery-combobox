@@ -437,7 +437,7 @@ function createCombo(element, bAutoShow, bArrowVisible, width) {
 			this.hideList();
 			this.fireEvent('select', e);
 			var theFakeEdit = Options.fakeEdit;
-			if (theFakeEdit.value != value) {
+			if (theFakeEdit != null && theFakeEdit.value != value) {
 				theFakeEdit.value = value;
 				$(Options.originElement).trigger('onchange'); // trigger onchange event of the original overriden control
 			}
