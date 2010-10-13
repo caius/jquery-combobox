@@ -1,22 +1,25 @@
-/* 
-* vim: noexpandtab 
-*/
-
-/**
-* JQuery UI combobox plugin.  This may be called on any element; the element
-* is replaced by a text field and drop-down div.  If the replaced element was
-* a select, the combobox options can be picked up from the contents of the
-* select.  Otherwise, the 'data' option must be provided to specify choice.
-*
-* Method names in documentation are relative to the JQuery UI infrastructure,
-* i.e. the method call is always 'combobox', and then the method name is
-* passed as the first (string) argument.
-*
-* @fileoverview
-* @author Jonathan Tang
-* @dependency jquery-1.2.6.js
-* @dependency ui.core.js
-*/
+/*
+ * Copyright (c) 2008 Jonathan Tang
+ * Dual licensed under the MIT (MIT-LICENSE.txt)
+ * and GPL (GPL-LICENSE.txt) licenses.
+ *
+ * JQuery UI combobox plugin.  This may be called on any element; the element
+ * is replaced by a text field and drop-down div.  If the replaced element was
+ * a select, the combobox options can be picked up from the contents of the
+ * select.  Otherwise, the 'data' option must be provided to specify choice.
+ *
+ * Method names in documentation are relative to the JQuery UI infrastructure,
+ * i.e. the method call is always 'combobox', and then the method name is
+ * passed as the first (string) argument.
+ *
+ * @fileoverview
+ * @author Jonathan Tang
+ * @dependency jquery-1.2.6.js
+ * @dependency ui.core.js
+ * @version 1.0.1
+ *
+ * vim: noexpandtab
+ */
 function createCombo(element, bAutoShow, bArrowVisible, width) {
 	var sArrowURL = document.getElementById("_skinurl").value + "/drop_down.png";
 	var sArrowClickedURL = document.getElementById("_skinurl").value + "/drop_down_clicked.png";
